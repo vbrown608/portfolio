@@ -44,6 +44,13 @@ class FunnyWordsPage(webapp.RequestHandler):
         path = os.path.join(os.path.dirname(__file__), 'funnywords.html')
         self.response.out.write(template.render(path, template_values))
         
+class OpenDisclosurePage(webapp.RequestHandler):
+    """Render the main landing page where users can view instructions and create a new one."""
+    def get(self):
+        template_values = {}
+        path = os.path.join(os.path.dirname(__file__), 'opendisclosure.html')
+        self.response.out.write(template.render(path, template_values))
+
 class WritingPage(webapp.RequestHandler):
     """Render the main landing page where users can view instructions and create a new one."""
     def get(self):
@@ -61,6 +68,7 @@ class ProjectsPage(webapp.RequestHandler):
 
 application = webapp.WSGIApplication([
     ('/', MainPage),
+    ('/opendisclosure', OpenDisclosurePage),
     ('/metatictactoe', MetaTicTacToePage),
     ('/bioacoustics', BioacousticsPage),
     ('/mt', MtPage),
