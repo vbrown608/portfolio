@@ -1,0 +1,31 @@
+$black: #000;
+
+$white: #fff;
+
+$dark-grey: #2a2a2a;
+$medium-grey: tint($black, 30%);
+$light-grey: tint($black, 50%);
+
+// $medium-grey: tint($black, 35%);
+
+// $light-grey: tint($black, 70%);
+
+// Main colors
+$sky: #35caff;
+$light-sky: tint($sky, 40%);
+
+$navy: #09395f;
+$light-navy: tint($navy, 30%);
+
+$slate: #678f9f;
+
+$mint: #32d69d;
+$light-mint: tint($mint, 40%);
+
+$yellow: #e5ff1c;
+$light-yellow: tint($yellow, 40%);
+
+$fog: #dee1e4;
+
+$neutral: #ededeb;
+

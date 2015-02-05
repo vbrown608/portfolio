@@ -1,0 +1,13 @@
+.block--tude-general-homepage-trailer-block .fluid-width-video-wrapper {
+  @include breakpoint($narrow) {
+    width: 740px;
+  }
+
+  @include breakpoint($normal) {
+    width: 980px;
+  }
+
+  @include breakpoint($wide) {
+    width: 1220px;
+  }
+}

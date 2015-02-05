@@ -1,0 +1,49 @@
+@include border-box-sizing;
+
+.l-main,
+.l-region--footer,
+.l-header {
+  // Define mobile container and grid.
+  @include container($susy);
+
+  // Narrow.
+  @include breakpoint($narrow) {
+    @include container($narrow-grid);
+  }
+
+  // Normal.
+  @include breakpoint($normal) {
+    @include container($normal-grid);
+  }
+
+  // Wide.
+  @include breakpoint($wide) {
+    @include container($wide-grid);
+  }
+}
+
+.l-content {
+  @include partial-column;
+}
+
+.front .l-content,
+.page-my-fattitude .l-content,
+.page-supporters .l-content {
+  padding-right: 0;
+  padding-left: 0;
+
+  @include breakpoint($narrow) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include breakpoint($normal) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @include breakpoint($wide) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

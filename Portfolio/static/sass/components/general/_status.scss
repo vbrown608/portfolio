@@ -1,0 +1,37 @@
+.messages {
+  @include remify-style(padding, 10px);
+  @include full-column;
+  @include clearfix;
+  margin-top: 12px;
+  background-image: none;
+  border: none;
+
+  &.messages--status {
+    background-color: $light-mint;
+  }
+
+  &.messages--warning {
+    background-color: $light-sky;
+  }
+
+  &.messages--error {
+    background-color: $light-yellow;
+  }
+
+  .messages-icon {
+    float: left;
+    margin-right: 10px;
+  }
+
+  ul {
+    float: left;
+  }
+
+  li {
+    clear: left;
+  }
+
+  pre {
+    margin: 0;
+  }
+}

@@ -1,0 +1,103 @@
+.block--views-supporters-block {
+  @include full-column;
+  @include remify-style(padding-top, 30px);
+  @include remify-style(padding-bottom, 40px);
+  @include clearfix;
+  clear: both;
+  background-color: $fog;
+
+  @include breakpoint($narrow) {
+    background-repeat: no-repeat;
+    // background-position: bottom;
+    background-image: url('../images/backgrounds/Thanks_decoration_740.png');
+    @include retina-image('../images/backgrounds-2x/Thanks_decoration_740.png', 740px, 86px);
+    @include remify-style(padding-top, 38px);
+    h2 {
+      @include remify-style(line-height, 65px);
+    }
+  }
+
+  @include breakpoint($normal) {
+    @include remify-style(padding-top, 47px);
+    background-image: url('../images/backgrounds/Thanks_decoration_980.png');
+    @include retina-image('../images/backgrounds-2x/Thanks_decoration_980.png', 980px, 114px);
+  }
+
+  @include breakpoint($wide) {
+    @include remify-style(padding-top, 55px);
+    background-image: url('../images/backgrounds/Thanks_decoration_1220.png');
+    @include retina-image('../images/backgrounds-2x/Thanks_decoration_1220.png', 1220px, 142px);
+  }
+}
+
+.view-supporters {
+  .column {
+    width: 50%;
+    padding-left: 3%;
+    float: left;
+
+    @include breakpoint($narrow) {
+      width: 135px;
+      padding-left: 0;
+      padding-right: 10px;
+    }
+
+    @include breakpoint($normal) {
+      width: 153px;
+      padding-right: 10px;
+    }
+
+    @include breakpoint($wide) {
+      width: 160px;
+      padding-right: 15px;
+    }
+  }
+
+  .views-row {
+    padding-top: 12px;
+  }
+
+  .views-field-title {
+    color: $light-navy;
+  }
+
+  .views-field-field-supporter-location {
+    @include remify-style(font-size, 14px);
+    color: $navy;
+    font-style: italic;
+  }
+}
+
+.page-supporters .l-header {
+  margin-bottom: 0;
+}
+
+.page-supporters .l-content {
+  @include full-column;
+  @include clearfix;
+  background-color: $fog;
+
+  @include remify-style(padding-top, 40px);
+  h1 {
+    color: $navy;
+  }
+
+  @include remify-style(padding-bottom, 60px);
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @include breakpoint($narrow) {
+    background-image: url('../images/backgrounds/edge_740.png');
+    @include retina-image('../images/backgrounds-2x/edge_740.png', 740px, 17px);
+  }
+  @include breakpoint($normal) {
+    background-image: url('../images/backgrounds/edge_980.png');
+    @include retina-image('../images/backgrounds-2x/edge_980.png', 980px, 21px);
+  }
+
+  @include breakpoint($wide) {
+    background-image: url('../images/backgrounds/edge_1220.png');
+    @include retina-image('../images/backgrounds-2x/edge_1220.png', 1220px, 27px);
+  }
+}
+

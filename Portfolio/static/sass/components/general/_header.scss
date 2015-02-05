@@ -1,0 +1,149 @@
+.l-header {
+  @include remify-style(font-size, 18px);
+  @include remify-style(line-height, 22px);
+  font-family: $marker;
+  text-align: center;
+  margin-bottom: 40px;
+
+  @include breakpoint($normal) {
+    @include remify-style(font-size, 22px);
+    @include remify-style(line-height, 30px);
+  }
+
+  @include breakpoint($wide) {
+    @include remify-style(font-size, 28px);
+    @include remify-style(line-height, 36px);
+  }
+}
+
+.front .l-header {
+  margin-bottom: 0;
+}
+
+.block--tude-general-header-donate-block {
+  // Text styles
+  a {
+    @include link-colors($yellow, $white, $white, $yellow, $white);
+  }
+
+  // Background styles
+  background: url('../images/backgrounds/Donatebar_740.png') repeat top left;
+  @include retina-image('../images/backgrounds-2x/Donatebar_740.png', 432px, 593px);
+  height: 24px;
+
+  @include breakpoint($normal) {
+    background: url('../images/backgrounds/Donatebar_980.png') repeat top left;
+    @include retina-image('../images/backgrounds-2x/Donatebar_980.png', 432px, 593px);
+    height: 32px;
+  }
+
+  @include breakpoint($wide) {
+    background: url('../images/backgrounds/Donatebar_1220.png') repeat top left;
+    @include retina-image('../images/backgrounds-2x/Donatebar_1220.png', 432px, 593px);
+    height: 40px;
+  }
+}
+
+.l-region--header {
+  background: url('../images/backgrounds/Header_mobile.png') no-repeat;
+  @include retina-image('../images/backgrounds-2x/Header_mobile.png', 432px, 593px);
+  background-size: 100%;
+
+  // Hackery to lock aspect ratio
+  max-width: 100%;
+  height: 0;
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+  @include breakpoint($narrow) {
+    background-size: auto;
+    @include retina-sprite('Header_740', $hover: false, $active: false);
+    padding-top: 10.8%;
+    padding-bottom: 10.8%;
+  }
+
+  @include breakpoint($normal) {
+    @include retina-sprite('Header_980', $hover: false, $active: false);
+  }
+
+  @include breakpoint($wide) {
+    @include retina-sprite('Header_1220', $hover: false, $active: false);
+  }
+
+  .site-name a {
+    @include image-replace-link;
+    margin-top: -15%;
+    height: 0px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+
+    @include breakpoint($narrow) {
+      margin-top: -10.8%;
+      padding-top: 10.8%;
+      padding-bottom: 10.8%;
+    }
+  }
+
+  .site-slogan {
+    @include image-replace-link;
+    height: 0px;
+  }
+}
+
+.front .l-region--navigation {
+  background: $medium-grey;
+}
+
+.block--system-main-menu .menu {
+  @include clearfix;
+  @include item-list-menu;
+  @include remify-style(padding-top, 8px);
+  @include remify-style(padding-bottom, 8px);
+  background-color: $dark-grey;
+  font-family: $marker;
+
+  .active-trail,
+  .active {
+    color: $white;
+  }
+
+  @include breakpoint($narrow) {
+    padding-left: 4%;
+  }
+
+  li {
+    @include clearfix;
+    width: 22%;
+    text-align: center;
+    float: left;
+
+    &:nth-child(2) {
+      width: 56%;
+    }
+
+    &:nth-child(4) {
+      width: 50%;
+      padding-left: 5%;
+    }
+    &:nth-child(5) {
+      width: 50%;
+      padding-right: 5%;
+    }
+
+    @include breakpoint($narrow) {
+      &:nth-child(n) {
+        padding-left: 0;
+        width: auto;
+      }
+      @include remify-style(padding-right, 46px);
+    }
+
+    @include breakpoint($normal) {
+      @include remify-style(padding-right, 78px);
+    }
+
+    @include breakpoint($wide) {
+      @include remify-style(padding-right, 94px);
+    }
+  }
+}

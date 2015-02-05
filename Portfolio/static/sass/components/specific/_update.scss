@@ -1,0 +1,67 @@
+.node--update {
+  .submitted {
+    @include remify-style(font-size, 14px);
+    @include remify-style(line-height, 30px);
+    color: $navy;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  .node__submitted {
+    float: left;
+  }
+
+  .service-links {
+
+    li {
+      @include remify-style(margin-top, 4px);
+      @include remify-style(margin-bottom, 4px);
+      @include remify-style(margin-left, 6px);
+      list-style-type: none;
+      float: right;
+
+      a {
+        @include image-replace-link;
+      }
+
+      &.service-links-facebook {
+        @include retina-sprite('Social_facebook', $hover: true, $active: true);
+      }
+
+      &.service-links-twitter {
+        @include retina-sprite('Social_twitter', $hover: true, $active: true);
+      }
+
+      &.service-links-google-plus {
+        @include retina-sprite('Social_google', $hover: true, $active: true);
+      }
+
+      &.service-links-forward {
+        @include retina-sprite('Social_email', $hover: true, $active: true);
+      }
+    }
+  }
+
+  .field--name-field-update-body {
+    clear: both;
+  }
+}
+
+.view-updates {
+  .node__title {
+    @extend h3;
+    margin-bottom: 0;
+  }
+
+  .submitted {
+    @include remify-style(margin-bottom, 4px);
+  }
+
+  .node {
+    @include remify-style(margin-bottom, 45px);
+  }
+
+  .views-row:last-child .node {
+    margin-bottom: 0;
+  }
+}

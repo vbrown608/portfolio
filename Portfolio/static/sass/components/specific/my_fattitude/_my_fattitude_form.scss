@@ -1,0 +1,28 @@
+
+.upload-help-text {
+  @extend h4;
+}
+
+.field-name-field-my-fattitude-photo {
+  label {
+    @include remify-style(font-size, 28px);
+    @include remify-style(line-height, 36px);
+    font-family: $marker;
+    color: $navy;
+  }
+
+  .form-required {
+    display: none;
+  }
+
+  .form-submit {
+    @include remify-style(margin, 10px);
+  }
+}
+
+.node-my_fattitude-form {
+  .form-actions .form-submit {
+    @include remify-style(margin-top, 20px);
+    @include big-button;
+  }
+}

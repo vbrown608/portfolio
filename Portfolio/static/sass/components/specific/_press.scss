@@ -1,0 +1,50 @@
+.block--views-press-block {
+  @include full-column;
+  @include remify-style(padding-top, 40px);
+  @include remify-style(padding-bottom, 40px);
+  @include clearfix;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+.view-press {
+  text-align: center;
+
+  .views-row {
+    display: inline-block;
+    padding: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+
+    @include breakpoint($narrow) {
+      padding-left: 0;
+      padding-right: 30px;
+
+      &:nth-child(4n) {
+        padding-right: 0;
+      }
+    }
+
+    @include breakpoint($normal) {
+      &:nth-child(n) {
+        padding-right: 46px;
+      }
+      &:nth-child(5n) {
+        padding-right: 0;
+      }
+    }
+
+    @include breakpoint($wide) {
+      &:nth-child(n) {
+        padding-right: 46px;
+      }
+      &:nth-child(6n) {
+        padding-right: 0;
+      }
+    }
+
+  }
+}
