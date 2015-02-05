@@ -316,7 +316,7 @@ html {
 body {
   background-color: pink;
   color: #4c4c4c;
-  font-family: "Roboto", Helvetica, sans-serif; }
+  font-family: "Roboto", Helvetica, sans-serif, Helvetica, sans-serif; }
 
 /* line 10, ../sass/base/_typography.scss */
 h1,
@@ -336,7 +336,7 @@ h6 {
 
 /* line 21, ../sass/base/_typography.scss */
 h1 {
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 52px;
   font-size: 3.46667rem;
   line-height: 60px;
@@ -354,7 +354,7 @@ h1 {
 /* line 33, ../sass/base/_typography.scss */
 h2 {
   color: #52748f;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   font-size: 44px;
   font-size: 2.93333rem;
   line-height: 50px;
@@ -371,7 +371,7 @@ h2 {
 
 /* line 46, ../sass/base/_typography.scss */
 h3, .view-updates .node__title {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif, Helvetica, sans-serif;
   font-size: 27px;
   font-size: 1.8rem;
   line-height: 33px;
@@ -379,7 +379,7 @@ h3, .view-updates .node__title {
 
 /* line 52, ../sass/base/_typography.scss */
 h4, .upload-help-text, .node-type-my-fattitude .block--tude-general-my-fattitude-pledge-block, .my-fattitude-overview {
-  font-family: "Roboto", Helvetica, sans-serif;
+  font-family: "Roboto", Helvetica, sans-serif, Helvetica, sans-serif;
   font-size: 20px;
   font-size: 1.33333rem;
   line-height: 30px;
@@ -417,7 +417,7 @@ blockquote, .wysiwyg-quote-credit {
   font-size: 2.26667rem;
   line-height: 42px;
   line-height: 2.8rem;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #35caff;
   margin-left: 0;
   margin-right: 0; }
@@ -449,10 +449,6 @@ em strong,
 strong em {
   font-style: italic;
   color: #000; }
-
-/* line 111, ../sass/base/_typography.scss */
-* {
-  font-weight: normal !important; }
 
 /* line 2, ../sass/components/general/_footer.scss */
 .stamp-0 {
@@ -802,7 +798,7 @@ strong em {
         padding-right: 3.06667rem;
         display: block;
         float: left;
-        font-family: "Roboto";
+        font-family: "Roboto", Helvetica, sans-serif;
         color: #fff; } }
   /* line 68, ../sass/components/general/_footer.scss */
   .block--tude-general-footer-social-block .block__content .social {
@@ -955,7 +951,7 @@ strong em {
     border: none;
     width: 100%;
     background-color: #32d69d;
-    font-family: "Roboto";
+    font-family: "Roboto", Helvetica, sans-serif;
     color: #e5ff1c;
     text-align: center;
     background-color: #fff;
@@ -1018,7 +1014,7 @@ strong em {
         border: none;
         width: 100%;
         background-color: #32d69d;
-        font-family: "Roboto";
+        font-family: "Roboto", Helvetica, sans-serif;
         color: #e5ff1c;
         text-align: center;
         background-color: #fff;
@@ -1074,7 +1070,7 @@ strong em {
     border: none;
     width: 100%;
     background-color: #32d69d;
-    font-family: "Roboto";
+    font-family: "Roboto", Helvetica, sans-serif;
     color: #e5ff1c;
     text-align: center;
     padding: 14px;
@@ -1102,7 +1098,7 @@ strong em {
         border: none;
         width: 100%;
         background-color: #32d69d;
-        font-family: "Roboto";
+        font-family: "Roboto", Helvetica, sans-serif;
         color: #e5ff1c;
         text-align: center; }
         /* line 217, ../sass/abstractions/_toolkit.scss */
@@ -1162,7 +1158,7 @@ strong em {
   font-size: 1.2rem;
   line-height: 22px;
   line-height: 1.46667rem;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   text-align: center;
   margin-bottom: 40px; }
   @media (min-width: 995px) {
@@ -1341,7 +1337,7 @@ strong em {
   padding-bottom: 8px;
   padding-bottom: 0.53333rem;
   background-color: #2a2a2a;
-  font-family: "Roboto"; }
+  font-family: "Roboto", Helvetica, sans-serif; }
   /* line 38, ../sass/abstractions/_toolkit.scss */
   .block--system-main-menu .menu:after {
     content: "";
@@ -1474,7 +1470,7 @@ strong em {
     border: none;
     width: 100%;
     background-color: #32d69d;
-    font-family: "Roboto";
+    font-family: "Roboto", Helvetica, sans-serif;
     color: #e5ff1c;
     text-align: center;
     display: block; }
@@ -1823,7 +1819,7 @@ strong em {
 .wysiwyg-fact-credit {
   display: block;
   color: #fff;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   text-align: center;
   background-color: #09395f;
   padding: 20px;
@@ -1883,7 +1879,7 @@ strong em {
   border: none;
   width: 100%;
   background-color: #32d69d;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #e5ff1c;
   text-align: center;
   display: block; }
@@ -2314,7 +2310,7 @@ strong em {
   font-size: 1.86667rem;
   line-height: 36px;
   line-height: 2.4rem;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #09395f; }
 /* line 14, ../sass/components/specific/my_fattitude/_my_fattitude_form.scss */
 .field-name-field-my-fattitude-photo .form-required {
@@ -2340,7 +2336,7 @@ strong em {
   border: none;
   width: 100%;
   background-color: #32d69d;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #e5ff1c;
   text-align: center; }
   /* line 217, ../sass/abstractions/_toolkit.scss */
@@ -2383,7 +2379,7 @@ strong em {
   border: none;
   width: 100%;
   background-color: #32d69d;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   color: #e5ff1c;
   text-align: center;
   margin-top: 35px;
@@ -2732,7 +2728,7 @@ strong em {
   font-size: 1.86667rem;
   line-height: 36px;
   line-height: 2.4rem;
-  font-family: "Roboto";
+  font-family: "Roboto", Helvetica, sans-serif;
   padding-bottom: 5px;
   padding-bottom: 0.33333rem; }
   @media (min-width: 755px) {
