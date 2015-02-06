@@ -34,17 +34,17 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 select {
-  @include border-radius(10px);
-  @include remify-style(padding, 10px);
-  background-color: $fog;
-  border: none;
+  // @include border-radius(10px);
+  // @include remify-style(padding, 10px);
+  // background-color: $fog;
+  // border: none;
 }
 
 textarea {
   overflow: auto;
   vertical-align: top;
-  @include border-radius(0);
-  @include border-top-left-radius(10px);
+  // @include border-radius(0);
+  // @include border-top-left-radius(10px);
 }
 
 input[type="image"],
@@ -71,45 +71,20 @@ input[type="file"] {
 
 input[type="submit"],
 input[type="reset"] {
-  @include border-radius(10px);
-  @include remify-style(padding, 10px);
-  border: none;
-  background-color: $slate;
-  color: $yellow;
-  text-align: center;
+  // @include border-radius(10px);
+  // @include remify-style(padding, 10px);
+  // border: none;
+  // background-color: $slate;
+  // color: $yellow;
+  // text-align: center;
 
-  &:hover {
-    background-color: $navy;
-  }
-  &:active {
-    background-color: $fog;
-  }
+  // &:hover {
+  //   background-color: $navy;
+  // }
+  // &:active {
+  //   background-color: $fog;
+  // }
 }
 
 fieldset {
-  @include border-radius(10px);
-  border: 1px solid $mint;
-}
-
-html.js .form-autocomplete {
-  background-image: none;
-
-  &.throbbing {
-    background-image: url('../images/backgrounds/throbber.gif');
-    background-position: 99% 50%;
-    background-repeat: no-repeat;
-
-    @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-      background-image: url('../images/backgrounds-2x/throbber.gif');
-      background-size: 20px 20px;
-    }
-  }
-}
-
-.form-item .description {
-  color: $light-grey;
-
-  strong {
-    color: $medium-grey;
-  }
 }

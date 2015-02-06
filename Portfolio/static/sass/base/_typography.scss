@@ -1,10 +1,6 @@
-@include establish-baseline;
-
-
 body {
-  background-color: pink;
-  color: $medium-grey;
   font-family: $sans-serif;
+  font-weight: 300;
 }
 
 h1,
@@ -13,82 +9,46 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
   margin: 0;
   @include remify-style(margin-bottom, 10px);
+  font-weight: 300;
 }
 
 h1 {
-  font-family: $marker;
-  @include remify-style(font-size, 52px);
-  @include remify-style(line-height, 60px);
   @include remify-style(margin-bottom, 30px);
-
-  @include breakpoint($narrow) {
-    @include remify-style(font-size, $h1-fz);
-    @include remify-style(line-height, $h1-lh);
-  }
 }
 
 h2 {
-  color: $light-navy;
-  font-family: $marker;
-  @include remify-style(font-size, 44px);
-  @include remify-style(line-height, 50px);
   @include remify-style(margin-bottom, 15px);
-
-  @include breakpoint($narrow) {
-    @include remify-style(font-size, $h2-fz);
-    @include remify-style(line-height, $h2-lh);
-  }
 }
 
 h3 {
-  font-family: $sans-serif;
-  @include remify-style(font-size, $h3-fz);
-  @include remify-style(line-height, $h3-lh);
 }
 
 h4 {
-  font-family: $sans-serif;
-  @include remify-style(font-size, $h4-fz);
-  @include remify-style(line-height, $h4-lh);
 }
 
-// h5,
-// h6 {}
+h5,
+h6 {}
 
 p {}
 
 a {
-  // link-colors($normal, $hover, $active, $visited, $focus)
-  @include link-colors($mint, $light-navy, $fog, $mint, $navy);
+  // @include link-colors($mint, $light-navy, $fog, $mint, $navy);
   @include hyphenation;
   text-decoration: none;
 
   &.active-trail,
   &.active {
-    color: $navy;
+    // color: $navy;
   }
 }
 
 blockquote {
-  @include remify-style(font-size, 34px);
-  @include remify-style(line-height, 42px);
-  font-family: $marker;
-  color: $sky;
-  margin-left: 0;
-  margin-right: 0;
-
-  @include breakpoint($narrow) {
-    @include remify-style(margin-left, 40px);
-    @include remify-style(margin-right, 40px);
-  }
 }
 
 blockquote,
 blockquote p {
-  margin-bottom: 0;
 }
 
 em {
@@ -97,14 +57,14 @@ em {
 
 b,
 strong {
-  color: $black;
+  // color: $black;
   // font-weight: $regular;
 }
 
 em strong,
 strong em {
-  font-style: italic;
-  color: $black;
+  // font-style: italic;
+  // color: $black;
   // font-weight: $regular;
 }
 

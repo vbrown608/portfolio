@@ -7,37 +7,38 @@
 	<link rel="stylesheet" type="text/css" href="css/folio-theme.no-query.css" />
 	<link rel="stylesheet" type="text/css" href="css/folio-theme.normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/folio-theme.styles.css" />
-	<link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
 	<meta charset = "utf-8" />
 </head>
 <body>
 
-<div id='topBar'></div>
-<div id='wrapper'>
+<div class='page'>
 	<header>
 		<h1><a href='/'>Vivian Brown</a></h3>
-		<a href='mailto:vivian.brown@gmail.com'><img src='/images/email.png' width=32px title='e-mail'></a>
-		<a href='https://www.goodreads.com/user/show/24178333-vivian-brown' target='_blank'><img src='/images/goodreads.png' width=32px title='goodreads'></a>
-		<a href='https://twitter.com/vbrown608' target='_blank'><img src='/images/twitter.png' width=32px title='twitter'></a>
-		<a href='https://github.com/vbrown608' target='_blank'><img src='/images/github.png' width=32px title='github'></a>
-		<a href='http://www.linkedin.com/profile/view?id=99560260' target='_blank'><img src='/images/linkedin.png' width=32px title='linkedin'></a>
 	</header>
 	<nav>
-		<h3 id='projects'>Projects</h3>
-		<h4><a href="/opendisclosure">OpenDisclosure</a></h4>
-		<h4><a href='/metatictactoe'>metaTicTacToe</a></h4>
-		<h4><a href='/bioacoustics'>Bioacoustics + ML</a></h4>
-		<h4><a href='/mt'>Machine Translation</a></h4>
-
-		<h3 id='writing'><a href='/writing'>Writing</a></h3>
-
-		<h3 id='resume'><a href='/files/Vivian_Brown_Resume.pdf' target='_blank'>Resume</a></h3>
+		<ul>
+			<li><a href='/about'>About</a></li>
+			<li><a href='/projects'>Projects</a></li>
+			<li><a href='/writing'>Writing</a></li>
+			<li><a href='/files/Vivian_Brown_Resume.pdf' target='_blank'>Resume</a></li>
+		</ul>
 	</nav>
-	<article>
-		{% block content %}
+	<div class='main-content'>
+		<article>
+			{% block content %}
 
-		{% endblock %}
-	</article>
+			{% endblock %}
+		</article>
+	</div>
+	<footer>
+		vivian.brown@gmail.com
+		<ul>
+			<li><a href='https://github.com/vbrown608' target='_blank'>Github</a></li>
+			<li><a href='http://www.linkedin.com/profile/view?id=99560260' target='_blank'>LinkedIn</a></li>
+			<li><a href='https://twitter.com/vbrown608' target='_blank'>Twitter</a></li>
+			<li><a href='https://www.goodreads.com/user/show/24178333-vivian-brown' target='_blank'>Goodreads</a></li>
+		</ul>
+	</footer>
 </div>
 
 </body>
