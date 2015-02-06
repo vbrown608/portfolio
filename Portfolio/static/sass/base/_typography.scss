@@ -1,6 +1,6 @@
 body {
   font-family: $sans-serif;
-  font-weight: 300;
+  @include remify-style(font-size, 13px);
 }
 
 h1,
@@ -11,15 +11,12 @@ h5,
 h6 {
   margin: 0;
   @include remify-style(margin-bottom, 10px);
-  font-weight: 300;
 }
 
-h1 {
-  @include remify-style(margin-bottom, 30px);
-}
-
-h2 {
+h1, h2 {
   @include remify-style(margin-bottom, 15px);
+  @include remify-style(font-size, 30px);
+  font-family: $sans-serif-condensed;
 }
 
 h3 {
@@ -66,5 +63,16 @@ strong em {
   // font-style: italic;
   // color: $black;
   // font-weight: $regular;
+}
+
+.subtitle {
+  @include remify-style(margin-bottom, 20px);
+  @include remify-style(font-size, 16px);
+  font-family: $serif;
+  font-weight: 400;
+}
+
+.page-title {
+  @include remify-style(margin-bottom, 4px);
 }
 

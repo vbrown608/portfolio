@@ -1,0 +1,15 @@
+.social-media {
+  float: right;
+  padding-right: 50px;
+
+
+  ul {
+    @include clearfix;
+    @include item-list;
+
+    // li {
+    //   display: block;
+    //   float: left;
+    // }
+  }
+}

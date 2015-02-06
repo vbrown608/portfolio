@@ -15,9 +15,9 @@
   }
 
   // Wide.
-  @include breakpoint($wide) {
-    @include container($wide-grid);
-  }
+  // @include breakpoint($wide) {
+  //   @include container($wide-grid);
+  // }
 }
 
 .page {

@@ -1,0 +1,40 @@
+
+header h1 {
+  @include remify-style(font-size, 38px);
+  font-family: $sans-serif-condensed;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+header .subtitle {
+  @include remify-style(margin-bottom, 40px);
+  @include remify-style(font-size, 14px);
+}
+
+nav ul {
+  @include clearfix;
+  @include item-list;
+  @include remify-style(margin-bottom, 30px);
+  @include remify-style(font-size, 22px);
+  @include remify-style(padding-bottom, 9px);
+  border-bottom: 1px solid black;
+  font-family: $sans-serif-condensed;
+  font-weight: 400;
+
+  li {
+
+    @include breakpoint($narrow) {
+      @include remify-style(padding-right, 112px);
+      display: block;
+      float: left;
+
+      // width: 25%;
+      // width: 30%;
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+
+  }
+}

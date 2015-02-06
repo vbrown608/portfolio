@@ -15,11 +15,11 @@ handlers:
   static_dir: images
 
 - url: /files
-  static_dir: files
+  static_dir: static/files
 
 - url: /favicon.ico
   static_files: images/favicon.ico
   upload: images/favicon.ico
 
 - url: /.*
-  script: helloworld.py
+  script: main.py
