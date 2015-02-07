@@ -8,73 +8,27 @@ import os
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 from google.appengine.ext.webapp.util import run_wsgi_app
+import logging
 
-class MainPage(webapp.RequestHandler):
+class ProjectPage(webapp.RequestHandler):
     """Render the main landing page where users can view instructions and create a new one."""
     def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'index.html')
-        self.response.out.write(template.render(path, template_values))
+        path = self.request.path
+        temp = os.path.join(
+            os.path.dirname(__file__),
+            'templates/' + path + '.html')
 
-class MetaTicTacToePage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'metatictactoe.html')
-        self.response.out.write(template.render(path, template_values))
+        if not os.path.isfile(temp):
+            temp = os.path.join(
+                os.path.dirname(__file__),
+                'templates/index.html')
 
-class BioacousticsPage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'bioacoustics.html')
-        self.response.out.write(template.render(path, template_values))
-
-class MtPage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'mt.html')
-        self.response.out.write(template.render(path, template_values))
-
-class FunnyWordsPage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'funnywords.html')
-        self.response.out.write(template.render(path, template_values))
-
-class OpenDisclosurePage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'opendisclosure.html')
-        self.response.out.write(template.render(path, template_values))
-
-class WritingPage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'writing.html')
-        self.response.out.write(template.render(path, template_values))
-
-class ProjectsPage(webapp.RequestHandler):
-    """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        template_values = {}
-        path = os.path.join(os.path.dirname(__file__) + '/templates/', 'projects.html')
-        self.response.out.write(template.render(path, template_values))
+        outstr = template.render(temp, { })
+        self.response.out.write(outstr)
 
 
 application = webapp.WSGIApplication([
-    ('/', MainPage),
-    ('/opendisclosure', OpenDisclosurePage),
-    ('/metatictactoe', MetaTicTacToePage),
-    ('/bioacoustics', BioacousticsPage),
-    ('/mt', MtPage),
-    ('/funnywords', FunnyWordsPage),
-    ('/writing', WritingPage),
-    ('/projects', ProjectsPage)
+    ('/.*', ProjectPage),
     ], debug=True)
 
 def main():
