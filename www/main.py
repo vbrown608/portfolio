@@ -8,27 +8,35 @@ import os
 from google.appengine.ext import webapp
 from google.appengine.ext.webapp import template
 from google.appengine.ext.webapp.util import run_wsgi_app
+from webapp2_extras import jinja2
 import logging
 
-class ProjectPage(webapp.RequestHandler):
+# env = Environment(loader=PackageLoader('yourapplication', 'templates'))
+
+class BaseHandler(webapp.RequestHandler):
+  @webapp.cached_property
+  def jinja2(self):
+        return jinja2.get_jinja2(app=self.app)
+
+  def render_template(self, filename, **template_args):
+        self.response.write(self.jinja2.render_template(filename, **template_args))
+
+
+class MainHandler(BaseHandler):
     """Render the main landing page where users can view instructions and create a new one."""
     def get(self):
-        path = self.request.path
-        temp = os.path.join(
+        temp = self.request.path
+        path = os.path.join(
             os.path.dirname(__file__),
-            'templates/' + path + '.html')
+            'templates' + temp + '.html')
 
-        if not os.path.isfile(temp):
-            temp = os.path.join(
-                os.path.dirname(__file__),
-                'templates/index.html')
+        if not os.path.isfile(path):
+            self.render_template('index.html')
 
-        outstr = template.render(temp, { })
-        self.response.out.write(outstr)
-
+        self.render_template(temp.strip('/') + '.html')
 
 application = webapp.WSGIApplication([
-    ('/.*', ProjectPage),
+    ('/.*', MainHandler),
     ], debug=True)
 
 def main():
