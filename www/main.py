@@ -11,8 +11,6 @@ from google.appengine.ext.webapp.util import run_wsgi_app
 from webapp2_extras import jinja2
 import logging
 
-# env = Environment(loader=PackageLoader('yourapplication', 'templates'))
-
 class BaseHandler(webapp.RequestHandler):
   @webapp.cached_property
   def jinja2(self):
@@ -31,9 +29,9 @@ class MainHandler(BaseHandler):
             'templates' + temp + '.html')
 
         if not os.path.isfile(path):
-            self.render_template('index.html')
+            return self.render_template('index.html')
 
-        self.render_template(temp.strip('/') + '.html')
+        return self.render_template(temp.strip('/') + '.html')
 
 application = webapp.WSGIApplication([
     ('/.*', MainHandler),
