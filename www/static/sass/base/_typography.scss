@@ -11,11 +11,18 @@ h5,
 h6 {
   margin: 0;
   @include remify-style(margin-bottom, 10px);
+  font-weight: 400;
 }
 
-h1, h2 {
+h1 {
   @include remify-style(margin-bottom, 15px);
   @include remify-style(font-size, 30px);
+  font-family: $sans-serif-condensed;
+}
+
+h2 {
+  @include remify-style(margin-bottom, 12px);
+  @include remify-style(font-size, 24px);
   font-family: $sans-serif-condensed;
 }
 

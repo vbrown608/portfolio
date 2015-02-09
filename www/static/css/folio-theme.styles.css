@@ -167,17 +167,26 @@ h5,
 h6 {
   margin: 0;
   margin-bottom: 10px;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 0.625rem;
+  font-weight: 400; }
 
-/* line 16, ../sass/base/_typography.scss */
-h1, h2 {
+/* line 17, ../sass/base/_typography.scss */
+h1 {
   margin-bottom: 15px;
   margin-bottom: 0.9375rem;
   font-size: 30px;
   font-size: 1.875rem;
   font-family: "Roboto Condensed", Helvetica, sans-serif; }
 
-/* line 33, ../sass/base/_typography.scss */
+/* line 23, ../sass/base/_typography.scss */
+h2 {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-family: "Roboto Condensed", Helvetica, sans-serif; }
+
+/* line 40, ../sass/base/_typography.scss */
 a {
   word-break: break-all;
   word-break: break-word;
@@ -187,12 +196,12 @@ a {
   hyphens: auto;
   text-decoration: none; }
 
-/* line 51, ../sass/base/_typography.scss */
+/* line 58, ../sass/base/_typography.scss */
 em {
   font-style: italic; }
 
-/* line 68, ../sass/base/_typography.scss */
-.subtitle {
+/* line 75, ../sass/base/_typography.scss */
+.subtitle, .resume .download-link {
   margin-bottom: 20px;
   margin-bottom: 1.25rem;
   font-size: 16px;
@@ -200,7 +209,7 @@ em {
   font-family: "Inconsolata", Georgia, Times, serif;
   font-weight: 400; }
 
-/* line 75, ../sass/base/_typography.scss */
+/* line 82, ../sass/base/_typography.scss */
 .page-title {
   margin-bottom: 4px;
   margin-bottom: 0.25rem; }
@@ -249,7 +258,7 @@ header h1 {
   margin-bottom: 0; }
 
 /* line 9, ../sass/components/_header.scss */
-header .subtitle {
+header .subtitle, header .resume .download-link, .resume header .download-link {
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
   font-size: 14px;
@@ -388,5 +397,14 @@ nav ul {
   /* line 46, ../sass/components/_projects.scss */
   .project-list .teaser .description {
     margin-bottom: 50px; }
+
+/* line 6, ../sass/components/_resume.scss */
+.resume p, .resume ul {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem; }
+/* line 10, ../sass/components/_resume.scss */
+.resume h2 {
+  margin-top: 25px;
+  margin-top: 1.5625rem; }
 
 /*# sourceMappingURL=folio-theme.styles.css.map */

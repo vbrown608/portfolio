@@ -1,0 +1,13 @@
+.resume {
+  .download-link {
+    @extend .subtitle
+  }
+
+  p, ul {
+    @include remify-style(margin-bottom, 20px);
+  }
+
+  h2 {
+    @include remify-style(margin-top, 25px);
+  }
+}
