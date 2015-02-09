@@ -1,20 +1,24 @@
 footer {
+  @include remify-style(padding-top, 40px);
+  @include remify-style(padding-bottom, 16px);
   @include clearfix;
   width: 100%;
-}
 
-.social-media {
-  float: right;
-  padding-right: 50px;
+  .social-media {
+    float: left;
+    padding-right: 50px;
 
 
-  ul {
-    @include clearfix;
-    @include item-list;
+    ul {
+      @include clearfix;
+      @include item-list;
+    }
+  }
 
-    // li {
-    //   display: block;
-    //   float: left;
-    // }
+  .contact {
+    @include remify-style(font-size, 14px);
+    @include remify-style(padding-top, 56px);
+    font-family: Inconsolata;
+    float: right;
   }
 }
