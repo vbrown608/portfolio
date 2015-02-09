@@ -372,5 +372,8 @@ nav ul {
     .project-list .teaser {
       @inclue remify-style(width, 448px);
       clear: none; } }
+  /* line 46, ../sass/components/_projects.scss */
+  .project-list .teaser .description {
+    margin-bottom: 50px; }
 
 /*# sourceMappingURL=folio-theme.styles.css.map */
