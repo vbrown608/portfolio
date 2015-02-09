@@ -1,19 +1,16 @@
+* {
+  margin: 0;
+}
 html, body {
   height: 100%;
 }
-
-.l-page {
+.page {
   min-height: 100%;
-  position: relative;
-  padding-bottom: 508px;
+  // height: auto !important; This line and the next line are not necessary unless you need IE6 support
+  // height: 100%;
+  margin: 0 auto -90px; /* the bottom margin is the negative value of the footer's height */
 }
 
-.l-main {
-  min-height: 100%;
-}
-
-.l-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.footer, .push {
+  height: 90px; /* .push must be the same height as .footer */
 }

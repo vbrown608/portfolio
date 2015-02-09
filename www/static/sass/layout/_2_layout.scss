@@ -1,6 +1,6 @@
 @include border-box-sizing;
 
-.page {
+.page, footer {
   // Define mobile container and grid.
   @include container($susy);
 
@@ -15,6 +15,6 @@
   }
 }
 
-.page {
+.page, footer {
   @include full-column;
 }
