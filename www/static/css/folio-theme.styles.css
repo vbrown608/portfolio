@@ -266,6 +266,9 @@ nav ul {
     nav ul {
       margin-bottom: 26px;
       margin-bottom: 1.625rem; } }
+  /* line 27, ../sass/components/_header.scss */
+  nav ul li.True {
+    text-decoration: underline; }
   @media (min-width: 755px) {
     /* line 26, ../sass/components/_header.scss */
     nav ul li {
@@ -273,7 +276,7 @@ nav ul {
       padding-right: 7rem;
       display: block;
       float: left; }
-      /* line 32, ../sass/components/_header.scss */
+      /* line 36, ../sass/components/_header.scss */
       nav ul li:last-of-type {
         padding-right: 0; } }
 

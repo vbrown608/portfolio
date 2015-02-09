@@ -24,6 +24,10 @@ nav ul {
   }
 
   li {
+    &.True {
+      text-decoration: underline;
+    }
+
     @include breakpoint($narrow) {
       @include remify-style(padding-right, 112px);
       display: block;

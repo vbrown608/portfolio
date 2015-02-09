@@ -22,19 +22,19 @@ class BaseHandler(webapp.RequestHandler):
 
 class MainHandler(BaseHandler):
     """Render the main landing page where users can view instructions and create a new one."""
-    def get(self):
-        temp = self.request.path
-        path = os.path.join(
+    def get(self, path):
+        template_location = os.path.join(
             os.path.dirname(__file__),
-            'templates' + temp + '.html')
+            'templates/' + path + '.html')
 
-        if not os.path.isfile(path):
+        if not os.path.isfile(template_location):
             return self.render_template('index.html')
 
-        return self.render_template(temp.strip('/') + '.html')
+        base = path.split('/')[0]
+        return self.render_template(path + '.html', base = base)
 
 application = webapp.WSGIApplication([
-    ('/.*', MainHandler),
+    ('/(.*)', MainHandler),
     ], debug=True)
 
 def main():
