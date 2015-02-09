@@ -207,10 +207,19 @@ em {
   margin-bottom: 0.25rem; }
 
 /* line 1, ../sass/components/_footer.scss */
+footer {
+  width: 100%; }
+  /* line 38, ../sass/abstractions/_toolkit.scss */
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 6, ../sass/components/_footer.scss */
 .social-media {
   float: right;
   padding-right: 50px; }
-  /* line 6, ../sass/components/_footer.scss */
+  /* line 11, ../sass/components/_footer.scss */
   .social-media ul {
     list-style: none;
     padding: 0;
@@ -252,14 +261,19 @@ nav ul {
     content: "";
     display: table;
     clear: both; }
+  @media (min-width: 995px) {
+    /* line 14, ../sass/components/_header.scss */
+    nav ul {
+      margin-bottom: 26px;
+      margin-bottom: 1.625rem; } }
   @media (min-width: 755px) {
-    /* line 24, ../sass/components/_header.scss */
+    /* line 26, ../sass/components/_header.scss */
     nav ul li {
       padding-right: 112px;
       padding-right: 7rem;
       display: block;
       float: left; }
-      /* line 31, ../sass/components/_header.scss */
+      /* line 32, ../sass/components/_header.scss */
       nav ul li:last-of-type {
         padding-right: 0; } }
 
@@ -279,6 +293,7 @@ nav ul {
     /* line 4, ../sass/components/_homepage.scss */
     .homepage-thumbs .thumb {
       width: 215px;
+      width: 13.4375rem;
       margin-right: 17px;
       margin-right: 1.0625rem;
       margin-bottom: 17px;
@@ -290,6 +305,7 @@ nav ul {
     /* line 4, ../sass/components/_homepage.scss */
     .homepage-thumbs .thumb {
       width: 294px;
+      width: 18.375rem;
       margin-right: 19px;
       margin-right: 1.1875rem;
       margin-bottom: 19px;
@@ -297,5 +313,64 @@ nav ul {
       /* line 25, ../sass/components/_homepage.scss */
       .homepage-thumbs .thumb:nth-child(3) {
         margin-right: 0; } }
+
+/* line 33, ../sass/components/_homepage.scss */
+.project-teaser {
+  float: left; }
+
+/* line 38, ../sass/abstractions/_toolkit.scss */
+.project-list:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 4, ../sass/components/_projects.scss */
+.project-list .project {
+  width: 100%; }
+  /* line 38, ../sass/abstractions/_toolkit.scss */
+  .project-list .project:after {
+    content: "";
+    display: table;
+    clear: both; }
+/* line 9, ../sass/components/_projects.scss */
+.project-list .thumb {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: block;
+  float: left;
+  max-width: 215px; }
+  @media (min-width: 755px) {
+    /* line 9, ../sass/components/_projects.scss */
+    .project-list .thumb {
+      width: 215px;
+      width: 13.4375rem;
+      max-width: none;
+      margin-right: 17px;
+      margin-right: 1.0625rem;
+      margin-bottom: 17px;
+      margin-bottom: 1.0625rem; }
+      /* line 21, ../sass/components/_projects.scss */
+      .project-list .thumb:nth-child(3) {
+        margin-right: 0; } }
+  @media (min-width: 995px) {
+    /* line 9, ../sass/components/_projects.scss */
+    .project-list .thumb {
+      width: 294px;
+      width: 18.375rem;
+      margin-right: 26px;
+      margin-right: 1.625rem;
+      margin-bottom: 26px;
+      margin-bottom: 1.625rem; }
+      /* line 31, ../sass/components/_projects.scss */
+      .project-list .thumb:nth-child(3) {
+        margin-right: 0; } }
+/* line 37, ../sass/components/_projects.scss */
+.project-list .teaser {
+  width: 100%;
+  clear: both; }
+  @media (min-width: 755px) {
+    /* line 37, ../sass/components/_projects.scss */
+    .project-list .teaser {
+      @inclue remify-style(width, 448px);
+      clear: none; } }
 
 /*# sourceMappingURL=folio-theme.styles.css.map */

@@ -1,14 +1,20 @@
-.homepage-thumbs {
+
+.project-list {
   @include clearfix;
+  .project {
+    @include clearfix;
+    width: 100%;
+  }
 
   .thumb {
     @include remify-style(margin-bottom, 20px);
     display: block;
     float: left;
-    max-width: 380px;
+    max-width: 215px;
 
     @include breakpoint($narrow) {
       @include remify-style(width, 215px);
+      max-width: none;
       @include remify-style(margin-right, 17px);
       @include remify-style(margin-bottom, 17px);
 
@@ -19,8 +25,8 @@
 
     @include breakpoint($normal) {
       @include remify-style(width, 294px);
-      @include remify-style(margin-right, 19px);
-      @include remify-style(margin-bottom, 19px);
+      @include remify-style(margin-right, 26px);
+      @include remify-style(margin-bottom, 26px);
 
       &:nth-child(3) {
         margin-right: 0;
@@ -28,8 +34,13 @@
     }
   }
 
-}
+  .teaser {
+    width: 100%;
+    clear: both;
 
-.project-teaser {
-  float: left;
+    @include breakpoint($narrow) {
+      @inclue remify-style(width, 448px);
+      clear: none;
+    }
+  }
 }
