@@ -79,20 +79,15 @@ html, body {
         display: block;
         clear: both; } }
 
-/* line 23, ../sass/layout/_2_layout.scss */
+/* line 18, ../sass/layout/_2_layout.scss */
 .page {
   padding-left: 20px;
   padding-right: 20px; }
   @media (min-width: 755px) {
-    /* line 23, ../sass/layout/_2_layout.scss */
+    /* line 18, ../sass/layout/_2_layout.scss */
     .page {
       padding-left: 30px;
       padding-right: 30px; } }
-  @media (min-width: 1235px) {
-    /* line 23, ../sass/layout/_2_layout.scss */
-    .page {
-      padding-left: 50px;
-      padding-right: 50px; } }
 
 /* line 1, ../sass/base/_forms.scss */
 label,
@@ -246,13 +241,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
-  margin-bottom: 1.875rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
   font-size: 22px;
   font-size: 1.375rem;
-  padding-bottom: 9px;
-  padding-bottom: 0.5625rem;
-  border-bottom: 1px solid black;
   font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-weight: 400; }
   /* line 38, ../sass/abstractions/_toolkit.scss */
@@ -267,8 +259,43 @@ nav ul {
       padding-right: 7rem;
       display: block;
       float: left; }
-      /* line 34, ../sass/components/_header.scss */
+      /* line 31, ../sass/components/_header.scss */
       nav ul li:last-of-type {
         padding-right: 0; } }
+
+/* line 38, ../sass/abstractions/_toolkit.scss */
+.homepage-thumbs:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 4, ../sass/components/_homepage.scss */
+.homepage-thumbs .thumb {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  display: block;
+  float: left;
+  max-width: 380px; }
+  @media (min-width: 755px) {
+    /* line 4, ../sass/components/_homepage.scss */
+    .homepage-thumbs .thumb {
+      width: 215px;
+      margin-right: 17px;
+      margin-right: 1.0625rem;
+      margin-bottom: 17px;
+      margin-bottom: 1.0625rem; }
+      /* line 15, ../sass/components/_homepage.scss */
+      .homepage-thumbs .thumb:nth-child(3) {
+        margin-right: 0; } }
+  @media (min-width: 995px) {
+    /* line 4, ../sass/components/_homepage.scss */
+    .homepage-thumbs .thumb {
+      width: 294px;
+      margin-right: 19px;
+      margin-right: 1.1875rem;
+      margin-bottom: 19px;
+      margin-bottom: 1.1875rem; }
+      /* line 25, ../sass/components/_homepage.scss */
+      .homepage-thumbs .thumb:nth-child(3) {
+        margin-right: 0; } }
 
 /*# sourceMappingURL=folio-theme.styles.css.map */

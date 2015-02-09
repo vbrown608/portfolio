@@ -13,11 +13,6 @@
   @include breakpoint($normal) {
     @include container($normal-grid);
   }
-
-  // Wide.
-  // @include breakpoint($wide) {
-  //   @include container($wide-grid);
-  // }
 }
 
 .page {

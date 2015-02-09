@@ -180,11 +180,6 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-
-  @include breakpoint($wide) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 @mixin partial-column {
@@ -195,48 +190,5 @@
 
   @include breakpoint($normal) {
     padding-right: 310px;
-  }
-
-  @include breakpoint($wide) {
-    padding-right: 400px;
-  }
-}
-
-@mixin big-button {
-  @include remify-style(padding, 35px);
-  @include remify-style(font-size, 28px);
-  @include remify-style(line-height, 36px);
-  @include border-radius(10px);
-  border: none;
-  width: 100%;
-  background-color: $mint;
-  font-family: $marker;
-  color: $yellow;
-  text-align: center;
-
-  &:hover {
-    background-color: $navy;
-  }
-  &:active {
-    background-color: $slate;
-  }
-}
-
-@mixin big-field {
-  @include big-button;
-  @include placeholder($light-mint);
-  background-color: $white;
-  color: $medium-grey;
-  outline: none;
-
-  &:focus {
-    @include placeholder(transparent);
-  }
-
-  &:hover {
-    background-color: $white;
-  }
-  &:active {
-    background-color: $white;
   }
 }

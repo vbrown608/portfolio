@@ -1,0 +1,31 @@
+.homepage-thumbs {
+  @include clearfix;
+
+  .thumb {
+    @include remify-style(margin-bottom, 20px);
+    display: block;
+    float: left;
+    max-width: 380px;
+
+    @include breakpoint($narrow) {
+      width: 215px;
+      @include remify-style(margin-right, 17px);
+      @include remify-style(margin-bottom, 17px);
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+
+    @include breakpoint($normal) {
+      width: 294px;
+      @include remify-style(margin-right, 19px);
+      @include remify-style(margin-bottom, 19px);
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
