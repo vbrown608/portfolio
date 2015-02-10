@@ -17,6 +17,9 @@ handlers:
 - url: /files
   static_dir: static/files
 
+- url: /js
+  static_dir: static/js
+
 - url: /favicon.ico
   static_files: images/favicon.ico
   upload: images/favicon.ico

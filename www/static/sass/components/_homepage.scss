@@ -3,12 +3,15 @@
 
   .thumb {
     @include remify-style(margin-bottom, 20px);
+    @include clearfix;
+    position: relative;
     display: block;
     float: left;
     max-width: 380px;
 
     @include breakpoint($narrow) {
       @include remify-style(width, 215px);
+      @include remify-style(height, 215px);
       @include remify-style(margin-right, 17px);
       @include remify-style(margin-bottom, 17px);
 
@@ -19,6 +22,7 @@
 
     @include breakpoint($normal) {
       @include remify-style(width, 294px);
+      @include remify-style(height, 294px);
       @include remify-style(margin-right, 19px);
       @include remify-style(margin-bottom, 19px);
 
@@ -26,10 +30,35 @@
         margin-right: 0;
       }
     }
+
+  }
+
+  .teaser {
+    @include remify-style(padding, 6px);
+    text-align: center;
+    background-color: #FFF;
+
+    @include breakpoint($narrow) {
+      @include remify-style(top, 60px);
+      display: none;
+      position: absolute;
+    }
+
+    @include breakpoint($normal) {
+      @include remify-style(top, 112px);
+      @include remify-style(padding-top, 10px);
+      @include remify-style(padding-bottom, 10px);
+    }
   }
 
 }
 
 .project-teaser {
   float: left;
+}
+
+.more-link {
+  width: 100%;
+  text-align: center;
+  @include remify-style(font-size, 15px);
 }
