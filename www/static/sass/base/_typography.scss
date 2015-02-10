@@ -35,7 +35,9 @@ h4 {
 h5,
 h6 {}
 
-p {}
+p {
+  @include remify-style(margin-bottom, 15px);
+}
 
 a {
   // @include link-colors($mint, $light-navy, $fog, $mint, $navy);

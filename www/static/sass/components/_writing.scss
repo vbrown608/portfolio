@@ -1,0 +1,17 @@
+.report {
+  @include remify-style(margin-bottom, 18px);
+
+  h3 {
+    @include remify-style(font-size, 18px);
+    @include remify-style(margin-bottom, 4px);
+  }
+
+  h4 {
+    @include remify-style(margin-bottom, 4px);
+  }
+
+  .byline {
+    font-style: italic;
+  }
+
+}
