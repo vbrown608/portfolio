@@ -3,22 +3,32 @@ footer {
   @include remify-style(padding-bottom, 16px);
   @include clearfix;
   width: 100%;
+  text-align: center;
+
+  @include breakpoint($narrow) {
+    text-align: left;
+  }
 
   .social-media {
-    float: left;
-    padding-right: 50px;
-
-
     ul {
       @include clearfix;
       @include item-list;
+    }
+
+    @include breakpoint($narrow) {
+      float: left;
+      padding-right: 50px;
     }
   }
 
   .contact {
     @include remify-style(font-size, 14px);
-    @include remify-style(padding-top, 56px);
+    @include remify-style(padding-top, 25px);
     font-family: Inconsolata;
-    float: right;
+
+    @include breakpoint($narrow) {
+      @include remify-style(padding-top, 56px);
+      float: right;
+    }
   }
 }

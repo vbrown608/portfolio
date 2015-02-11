@@ -229,34 +229,45 @@ footer {
   padding-top: 2.5rem;
   padding-bottom: 16px;
   padding-bottom: 1rem;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   /* line 38, ../sass/abstractions/_toolkit.scss */
   footer:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 7, ../sass/components/_footer.scss */
-  footer .social-media {
-    float: left;
-    padding-right: 50px; }
+  @media (min-width: 755px) {
+    /* line 1, ../sass/components/_footer.scss */
+    footer {
+      text-align: left; } }
+  /* line 13, ../sass/components/_footer.scss */
+  footer .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    /* line 38, ../sass/abstractions/_toolkit.scss */
+    footer .social-media ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  @media (min-width: 755px) {
     /* line 12, ../sass/components/_footer.scss */
-    footer .social-media ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; }
-      /* line 38, ../sass/abstractions/_toolkit.scss */
-      footer .social-media ul:after {
-        content: "";
-        display: table;
-        clear: both; }
-  /* line 18, ../sass/components/_footer.scss */
+    footer .social-media {
+      float: left;
+      padding-right: 50px; } }
+  /* line 24, ../sass/components/_footer.scss */
   footer .contact {
     font-size: 14px;
     font-size: 0.875rem;
-    padding-top: 56px;
-    padding-top: 3.5rem;
-    font-family: Inconsolata;
-    float: right; }
+    padding-top: 25px;
+    padding-top: 1.5625rem;
+    font-family: Inconsolata; }
+    @media (min-width: 755px) {
+      /* line 24, ../sass/components/_footer.scss */
+      footer .contact {
+        padding-top: 56px;
+        padding-top: 3.5rem;
+        float: right; } }
 
 /* line 2, ../sass/components/_header.scss */
 header h1 {
