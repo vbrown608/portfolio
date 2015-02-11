@@ -1,26 +1,40 @@
 
-header h1 {
-  @include remify-style(font-size, 38px);
-  font-family: $sans-serif-condensed;
-  font-weight: 400;
-  margin-bottom: 0;
+header {
+  @include remify-style(margin-bottom, 25px);
+
+  @include breakpoint($narrow) {
+    @include remify-style(margin-bottom, 40px);
+  }
+
+  h1 {
+    @include remify-style(font-size, 38px);
+    font-family: $sans-serif-condensed;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .subtitle {
+    @include remify-style(font-size, 14px);
+  }
 }
 
-header .subtitle {
-  @include remify-style(margin-bottom, 40px);
-  @include remify-style(font-size, 14px);
-}
+nav {
+  @include remify-style(margin-bottom, 30px);
 
-nav ul {
-  @include clearfix;
-  @include item-list;
-  @include remify-style(margin-bottom, 18px);
-  @include remify-style(font-size, 22px);
-  font-family: $sans-serif-condensed;
-  font-weight: 400;
+  @include breakpoint($narrow) {
+    @include remify-style(margin-bottom, 18px);
+  }
 
-  @include breakpoint($normal) {
-    @include remify-style(margin-bottom, 26px);
+  ul {
+    @include clearfix;
+    @include item-list;
+    @include remify-style(font-size, 22px);
+    font-family: $sans-serif-condensed;
+    font-weight: 400;
+
+    @include breakpoint($normal) {
+      @include remify-style(margin-bottom, 26px);
+    }
   }
 
   li {
@@ -37,6 +51,6 @@ nav ul {
         padding-right: 0;
       }
     }
-
   }
+
 }

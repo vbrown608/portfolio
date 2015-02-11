@@ -270,53 +270,66 @@ footer {
         float: right; } }
 
 /* line 2, ../sass/components/_header.scss */
-header h1 {
-  font-size: 38px;
-  font-size: 2.375rem;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-weight: 400;
-  margin-bottom: 0; }
+header {
+  margin-bottom: 25px;
+  margin-bottom: 1.5625rem; }
+  @media (min-width: 755px) {
+    /* line 2, ../sass/components/_header.scss */
+    header {
+      margin-bottom: 40px;
+      margin-bottom: 2.5rem; } }
+  /* line 9, ../sass/components/_header.scss */
+  header h1 {
+    font-size: 38px;
+    font-size: 2.375rem;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: 0; }
+  /* line 16, ../sass/components/_header.scss */
+  header .subtitle, header .resume .download-link, .resume header .download-link {
+    font-size: 14px;
+    font-size: 0.875rem; }
 
-/* line 9, ../sass/components/_header.scss */
-header .subtitle, header .resume .download-link, .resume header .download-link {
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem;
-  font-size: 14px;
-  font-size: 0.875rem; }
-
-/* line 14, ../sass/components/_header.scss */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
-  font-size: 22px;
-  font-size: 1.375rem;
-  font-family: "Roboto Condensed", Helvetica, sans-serif;
-  font-weight: 400; }
-  /* line 38, ../sass/abstractions/_toolkit.scss */
-  nav ul:after {
-    content: "";
-    display: table;
-    clear: both; }
-  @media (min-width: 995px) {
-    /* line 14, ../sass/components/_header.scss */
-    nav ul {
-      margin-bottom: 26px;
-      margin-bottom: 1.625rem; } }
-  /* line 27, ../sass/components/_header.scss */
-  nav ul li.True {
+/* line 21, ../sass/components/_header.scss */
+nav {
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem; }
+  @media (min-width: 755px) {
+    /* line 21, ../sass/components/_header.scss */
+    nav {
+      margin-bottom: 18px;
+      margin-bottom: 1.125rem; } }
+  /* line 28, ../sass/components/_header.scss */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    font-size: 1.375rem;
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
+    font-weight: 400; }
+    /* line 38, ../sass/abstractions/_toolkit.scss */
+    nav ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+    @media (min-width: 995px) {
+      /* line 28, ../sass/components/_header.scss */
+      nav ul {
+        margin-bottom: 26px;
+        margin-bottom: 1.625rem; } }
+  /* line 41, ../sass/components/_header.scss */
+  nav li.True {
     text-decoration: underline; }
   @media (min-width: 755px) {
-    /* line 26, ../sass/components/_header.scss */
-    nav ul li {
+    /* line 40, ../sass/components/_header.scss */
+    nav li {
       padding-right: 112px;
       padding-right: 7rem;
       display: block;
       float: left; }
-      /* line 36, ../sass/components/_header.scss */
-      nav ul li:last-of-type {
+      /* line 50, ../sass/components/_header.scss */
+      nav li:last-of-type {
         padding-right: 0; } }
 
 /* line 38, ../sass/abstractions/_toolkit.scss */
