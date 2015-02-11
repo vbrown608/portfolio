@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
+<img src='/images/bioacoustics-map.png'>
 <h2>Oregon State Bioacoustics Project: Identifying Birdsong in Recordings from the H. J. Andrews Research Forest</h2>
 
 <p>In 2010 I spent the summer working with the <a href='http://eecs.oregonstate.edu/research/bioacoustics/'>Oregon State Bioacoustics Group</a>. We parsed recordings from the H. J. Andrews Research Forest and applied machine learning techniques to identify birdsong. The ultimate goal of the project is to automatically detect the species of bird in recordings of birdsong, creating a more efficient way to collect data about <b>bird population distributions</b>.</p>
 <p>To process the data, we split recordings into 15-second clips and performed a <a href='http://www.smbc-comics.com/?id=2874'>Fourier transform</a> to create a visual representation of the data. We worked on identifying regions of birdsong in time-frequency <b>spectrogram</b> images like the one below.</p>
 
-<img src='/images/spectrogram.png' width=724px title='chirp chirp'>
+<img src='/images/spectrogram.png' title='chirp chirp'>
 
 <p>To do that, we experimented with two techniques. First, we used <b>hysteresis</b> to identify louder regions within spectrograms. Second, we used a <b>Random Forest</b> trained on manually annotated spectrograms to assign a birdsong probability to each cell in a spectrogram. </p>
 <p>For both methods, we identified a set of parameters that achieved a good balance between sensitivity and specificity by evaluating <b>ROC curves</b> over a range of parameter values. Using Random Forest, we achieved a per-cell true positive rate of .906 with a false positive rate of .043. </p>

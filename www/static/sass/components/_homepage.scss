@@ -36,18 +36,22 @@
   .teaser {
     @include remify-style(padding, 6px);
     text-align: center;
-    background-color: #FFF;
+    // background-color: #FFF;
+    @include rgba-background(#FFF, .8);
 
     @include breakpoint($narrow) {
-      @include remify-style(top, 60px);
+      top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
       display: none;
       position: absolute;
     }
 
     @include breakpoint($normal) {
-      @include remify-style(top, 112px);
-      @include remify-style(padding-top, 10px);
-      @include remify-style(padding-bottom, 10px);
+    }
+
+    &.js-hover {
+      cursor: pointer;
     }
   }
 

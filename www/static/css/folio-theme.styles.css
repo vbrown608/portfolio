@@ -359,29 +359,25 @@ nav ul {
   padding: 6px;
   padding: 0.375rem;
   text-align: center;
-  background-color: #FFF; }
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8); }
   @media (min-width: 755px) {
     /* line 36, ../sass/components/_homepage.scss */
     .homepage-thumbs .teaser {
-      top: 60px;
-      top: 3.75rem;
+      top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
       display: none;
       position: absolute; } }
-  @media (min-width: 995px) {
-    /* line 36, ../sass/components/_homepage.scss */
-    .homepage-thumbs .teaser {
-      top: 112px;
-      top: 7rem;
-      padding-top: 10px;
-      padding-top: 0.625rem;
-      padding-bottom: 10px;
-      padding-bottom: 0.625rem; } }
+  /* line 53, ../sass/components/_homepage.scss */
+  .homepage-thumbs .teaser.js-hover {
+    cursor: pointer; }
 
-/* line 56, ../sass/components/_homepage.scss */
+/* line 60, ../sass/components/_homepage.scss */
 .project-teaser {
   float: left; }
 
-/* line 60, ../sass/components/_homepage.scss */
+/* line 64, ../sass/components/_homepage.scss */
 .more-link {
   width: 100%;
   text-align: center;
