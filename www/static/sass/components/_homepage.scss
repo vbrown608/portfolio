@@ -8,6 +8,7 @@
     display: block;
     float: left;
     max-width: 380px;
+    width: 100%;
 
     @include breakpoint($narrow) {
       @include remify-style(width, 215px);
@@ -36,7 +37,6 @@
   .teaser {
     @include remify-style(padding, 6px);
     text-align: center;
-    // background-color: #FFF;
     @include rgba-background(#FFF, .8);
 
     @include breakpoint($narrow) {

@@ -12,7 +12,7 @@ handlers:
   static_dir: static/fonts
 
 - url: /images
-  static_dir: images
+  static_dir: static/images
 
 - url: /files
   static_dir: static/files
