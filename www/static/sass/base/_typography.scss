@@ -40,14 +40,10 @@ p {
 }
 
 a {
-  // @include link-colors($mint, $light-navy, $fog, $mint, $navy);
+  // link-colors($normal, $hover, $active, $visited, $focus)
+  @include link-colors($navy, $neon-purple, $sky, $navy, $sky);
   @include hyphenation;
   text-decoration: none;
-
-  &.active-trail,
-  &.active {
-    // color: $navy;
-  }
 }
 
 blockquote {

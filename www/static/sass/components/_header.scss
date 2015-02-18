@@ -11,6 +11,10 @@ header {
     font-family: $sans-serif-condensed;
     font-weight: 400;
     margin-bottom: 0;
+
+    // a {
+    //   @include link-colors($teal, $teal, $teal, $teal, $teal);
+    // }
   }
 
   .subtitle {
