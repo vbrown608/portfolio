@@ -430,13 +430,14 @@ nav {
       position: absolute; } }
   /* line 53, ../sass/components/_homepage.scss */
   .homepage-thumbs .teaser.js-hover {
+    display: block;
     cursor: pointer; }
 
-/* line 60, ../sass/components/_homepage.scss */
+/* line 61, ../sass/components/_homepage.scss */
 .project-teaser {
   float: left; }
 
-/* line 64, ../sass/components/_homepage.scss */
+/* line 65, ../sass/components/_homepage.scss */
 .more-link {
   width: 100%;
   text-align: center;

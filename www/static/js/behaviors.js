@@ -13,7 +13,7 @@ $(function() {
       });
 
       // Show the teaser text and make it a button.
-      teaser.toggle();
+      // teaser.toggle();
       teaser.toggleClass('js-hover');
       teaser.click(function() {
         window.location = $(this).find('a').attr('href');
