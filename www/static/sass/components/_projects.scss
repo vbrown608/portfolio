@@ -92,8 +92,12 @@
   }
 
   img {
-    border: 1px solid black;
+    border: 1px solid $grey;
     margin-top: 20px;
     margin-bottom: 10px;
   }
+}
+
+img.prospera {
+  border: 2px solid #D5E7ED;
 }

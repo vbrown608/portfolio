@@ -16,8 +16,13 @@
       @include remify-style(margin-right, 17px);
       @include remify-style(margin-bottom, 17px);
 
-      &:nth-child(3) {
+      &:nth-child(3n) {
         margin-right: 0;
+      }
+
+      &.banner {
+        width:100%;
+        height: auto;
       }
     }
 

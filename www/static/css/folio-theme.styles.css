@@ -397,8 +397,12 @@ nav {
       margin-bottom: 17px;
       margin-bottom: 1.0625rem; }
       /* line 19, ../sass/components/_homepage.scss */
-      .homepage-thumbs .thumb:nth-child(3) {
-        margin-right: 0; } }
+      .homepage-thumbs .thumb:nth-child(3n) {
+        margin-right: 0; }
+      /* line 23, ../sass/components/_homepage.scss */
+      .homepage-thumbs .thumb.banner {
+        width: 100%;
+        height: auto; } }
   @media (min-width: 995px) {
     /* line 4, ../sass/components/_homepage.scss */
     .homepage-thumbs .thumb {
@@ -410,10 +414,10 @@ nav {
       margin-right: 1.1875rem;
       margin-bottom: 19px;
       margin-bottom: 1.1875rem; }
-      /* line 30, ../sass/components/_homepage.scss */
+      /* line 35, ../sass/components/_homepage.scss */
       .homepage-thumbs .thumb:nth-child(3) {
         margin-right: 0; } }
-/* line 37, ../sass/components/_homepage.scss */
+/* line 42, ../sass/components/_homepage.scss */
 .homepage-thumbs .teaser {
   padding: 6px;
   padding: 0.375rem;
@@ -421,23 +425,23 @@ nav {
   background-color: #FFF;
   background-color: rgba(255, 255, 255, 0.8); }
   @media (min-width: 755px) {
-    /* line 37, ../sass/components/_homepage.scss */
+    /* line 42, ../sass/components/_homepage.scss */
     .homepage-thumbs .teaser {
       top: 0;
       padding-top: 0;
       padding-bottom: 0;
       display: none;
       position: absolute; } }
-  /* line 53, ../sass/components/_homepage.scss */
+  /* line 58, ../sass/components/_homepage.scss */
   .homepage-thumbs .teaser.js-hover {
     display: block;
     cursor: pointer; }
 
-/* line 61, ../sass/components/_homepage.scss */
+/* line 66, ../sass/components/_homepage.scss */
 .project-teaser {
   float: left; }
 
-/* line 65, ../sass/components/_homepage.scss */
+/* line 70, ../sass/components/_homepage.scss */
 .more-link {
   width: 100%;
   text-align: center;
@@ -538,9 +542,13 @@ nav {
     margin-right: 30px; }
 /* line 94, ../sass/components/_projects.scss */
 .screenshots img {
-  border: 1px solid black;
+  border: 1px solid #B6B6B6;
   margin-top: 20px;
   margin-bottom: 10px; }
+
+/* line 101, ../sass/components/_projects.scss */
+img.prospera {
+  border: 2px solid #D5E7ED; }
 
 /* line 6, ../sass/components/_resume.scss */
 .resume p, .resume ul {
