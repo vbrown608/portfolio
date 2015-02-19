@@ -512,24 +512,34 @@ nav {
   .writeup {
     width: 50%; } }
 
-/* line 64, ../sass/components/_projects.scss */
-.screenshots {
+/* line 66, ../sass/components/_projects.scss */
+.screenshots.sidebar {
   margin-top: 25px; }
   @media (min-width: 755px) {
-    /* line 64, ../sass/components/_projects.scss */
-    .screenshots {
+    /* line 66, ../sass/components/_projects.scss */
+    .screenshots.sidebar {
       margin-top: 0;
       width: 40%;
       float: right; } }
   @media (min-width: 995px) {
-    /* line 64, ../sass/components/_projects.scss */
-    .screenshots {
+    /* line 66, ../sass/components/_projects.scss */
+    .screenshots.sidebar {
       width: 50%; } }
-  /* line 77, ../sass/components/_projects.scss */
-  .screenshots img {
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-bottom: 10px; }
+/* line 80, ../sass/components/_projects.scss */
+.screenshots.bottom {
+  clear: both; }
+  /* line 83, ../sass/components/_projects.scss */
+  .screenshots.bottom img {
+    max-height: 274px; }
+  /* line 87, ../sass/components/_projects.scss */
+  .screenshots.bottom .normal,
+  .screenshots.bottom .narrow {
+    margin-right: 30px; }
+/* line 94, ../sass/components/_projects.scss */
+.screenshots img {
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 10px; }
 
 /* line 6, ../sass/components/_resume.scss */
 .resume p, .resume ul {

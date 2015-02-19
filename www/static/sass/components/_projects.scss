@@ -62,16 +62,33 @@
 }
 
 .screenshots {
-  margin-top: 25px;
 
-  @include breakpoint($narrow) {
-    margin-top: 0;
-    width: 40%;
-    float: right;
+  &.sidebar {
+    margin-top: 25px;
+
+    @include breakpoint($narrow) {
+      margin-top: 0;
+      width: 40%;
+      float: right;
+    }
+
+    @include breakpoint($normal) {
+      width: 50%;
+    }
   }
 
-  @include breakpoint($normal) {
-    width: 50%;
+  &.bottom {
+    clear: both;
+
+    img {
+      max-height: 274px;
+    }
+
+    .normal,
+    .narrow {
+        margin-right: 30px; 
+    }
+
   }
 
   img {
