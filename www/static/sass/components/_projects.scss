@@ -48,3 +48,35 @@
     }
   }
 }
+
+.writeup {
+  @include breakpoint($narrow) {
+    width: 60%;
+    padding-right: 30px;
+    float: left;
+  }
+
+  @include breakpoint($normal) {
+    width: 50%;
+  }
+}
+
+.screenshots {
+  margin-top: 25px;
+
+  @include breakpoint($narrow) {
+    margin-top: 0;
+    width: 40%;
+    float: right;
+  }
+
+  @include breakpoint($normal) {
+    width: 50%;
+  }
+
+  img {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

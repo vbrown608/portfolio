@@ -18,3 +18,7 @@
 .page, footer {
   @include full-column;
 }
+
+article {
+  @include clearfix;
+}

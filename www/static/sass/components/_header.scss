@@ -12,9 +12,9 @@ header {
     font-weight: 400;
     margin-bottom: 0;
 
-    // a {
-    //   @include link-colors($teal, $teal, $teal, $teal, $teal);
-    // }
+    a {
+      @include link-colors($navy, $navy, $navy, $navy, $navy);
+    }
   }
 
   .subtitle {

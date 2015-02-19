@@ -88,6 +88,12 @@ html, body {
       padding-left: 30px;
       padding-right: 30px; } }
 
+/* line 38, ../sass/abstractions/_toolkit.scss */
+article:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /* line 1, ../sass/base/_forms.scss */
 label,
 select {
@@ -206,13 +212,13 @@ a {
     color: #192F9D; }
   /* line 21, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:focus {
-    color: #BAFFFA; }
+    color: #192F9D; }
   /* line 24, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:hover {
     color: #7F54FF; }
   /* line 27, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
   a:active {
-    color: #BAFFFA; }
+    color: #192F9D; }
 
 /* line 56, ../sass/base/_typography.scss */
 em {
@@ -298,6 +304,21 @@ header {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
     font-weight: 400;
     margin-bottom: 0; }
+    /* line 15, ../sass/components/_header.scss */
+    header h1 a {
+      color: #192F9D; }
+      /* line 18, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      header h1 a:visited {
+        color: #192F9D; }
+      /* line 21, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      header h1 a:focus {
+        color: #192F9D; }
+      /* line 24, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      header h1 a:hover {
+        color: #192F9D; }
+      /* line 27, ../../../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_link-colors.scss */
+      header h1 a:active {
+        color: #192F9D; }
   /* line 20, ../sass/components/_header.scss */
   header .subtitle, header .resume .download-link, .resume header .download-link {
     font-size: 14px;
@@ -479,6 +500,36 @@ nav {
   /* line 46, ../sass/components/_projects.scss */
   .project-list .teaser .description {
     margin-bottom: 50px; }
+
+@media (min-width: 755px) {
+  /* line 52, ../sass/components/_projects.scss */
+  .writeup {
+    width: 60%;
+    padding-right: 30px;
+    float: left; } }
+@media (min-width: 995px) {
+  /* line 52, ../sass/components/_projects.scss */
+  .writeup {
+    width: 50%; } }
+
+/* line 64, ../sass/components/_projects.scss */
+.screenshots {
+  margin-top: 25px; }
+  @media (min-width: 755px) {
+    /* line 64, ../sass/components/_projects.scss */
+    .screenshots {
+      margin-top: 0;
+      width: 40%;
+      float: right; } }
+  @media (min-width: 995px) {
+    /* line 64, ../sass/components/_projects.scss */
+    .screenshots {
+      width: 50%; } }
+  /* line 77, ../sass/components/_projects.scss */
+  .screenshots img {
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 10px; }
 
 /* line 6, ../sass/components/_resume.scss */
 .resume p, .resume ul {

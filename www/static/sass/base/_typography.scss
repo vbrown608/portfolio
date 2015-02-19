@@ -41,7 +41,7 @@ p {
 
 a {
   // link-colors($normal, $hover, $active, $visited, $focus)
-  @include link-colors($navy, $neon-purple, $sky, $navy, $sky);
+  @include link-colors($navy, $neon-purple, $navy, $navy, $navy);
   @include hyphenation;
   text-decoration: none;
 }
